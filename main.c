@@ -14,8 +14,26 @@ int main(){
 
         entrada[strcspn(entrada, "\n")] = '\0';
 
-        if((strcmp(entrada, "exit") == 0)){ 
+        char *comando = strtok(entrada, " ");
+
+        if(comando == NULL){
+            continue;
+        }
+
+        if((strcmp(comando, "exit") == 0)){ 
             break;
+        }
+
+        printf("Comando detectado: %s\n", comando);
+
+        char *argumento = strtok(NULL, " ");
+
+        while (argumento != NULL) {
+
+            printf("Comando detectado: %s\n", argumento);
+
+            argumento = strtok(NULL, " ");
+
         }
     }
 
