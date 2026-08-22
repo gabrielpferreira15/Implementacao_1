@@ -54,7 +54,7 @@ int main(){
                 continue;
             }
 
-            catalogo[tarefas_totais].nome = strdup(token_cmd);
+            catalogo[tarefas_totais].cmd = strdup(token_cmd);
 
             catalogo[tarefas_totais].args[0] = strdup(token_cmd);
 
