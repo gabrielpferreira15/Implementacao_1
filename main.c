@@ -46,13 +46,13 @@ int main(){
                 continue;
             }
 
-            catalogo[tarefas_totais].nome = strdup(token_nome);
-
             char *token_cmd = strtok(NULL, " ");
             if (token_cmd == NULL) {
                 printf("Erro: Faltando programa da tarefa.\n");
                 continue;
             }
+
+            catalogo[tarefas_totais].nome = strdup(token_nome);
 
             catalogo[tarefas_totais].cmd = strdup(token_cmd);
 
