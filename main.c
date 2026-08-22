@@ -30,10 +30,6 @@ int main(){
 
         while (argumento != NULL) {
 
-            if((strcmp(argumento, "exit") == 0)){ 
-            break;
-            }
-
             printf("Comando detectado: %s\n", argumento);
 
             argumento = strtok(NULL, " ");

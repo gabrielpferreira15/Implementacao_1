@@ -104,4 +104,13 @@ Comando detectado: exit
 processflow> exit aslkdjalkjds
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake xlean     clean[?2004l
 rm -f *.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake [?2004l
+gcc -c main.c
+gcc main.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../ pr  processflow[1m [0m[0m [?2004l
+processflow> ajskdjaskldj lexit     exit
+Comando detectado: ajskdjaskldj
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+rm -f *.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h
