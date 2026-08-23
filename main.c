@@ -59,16 +59,18 @@ int main() {
             args[indice] = NULL;
 
             cadastrar_task(token_nome, token_cmd, args);
-        } else if (strcmp(comando, "run") == 0) {
-            char *primeiro_arg = strtok(NULL, " ");
+        } 
+        
+        else if (strcmp(comando, "run") == 0) {
+            char *token_nome = strtok(NULL, " ");
 
-            if (primeiro_arg == NULL) {
+            if (token_nome == NULL) {
                 printf("Erro: Faltam argumentos para o comando run.\n");
                 continue;
             }
 
-            if (strcmp(primeiro_arg, "sequential") == 0) {
-                char *token_nome = strtok(NULL, " ");
+            if (strcmp(token_nome, "sequential") == 0) {
+                token_nome = strtok(NULL, " ");
 
                 if (token_nome == NULL) {
                     printf("Erro: Informe pelo menos uma tarefa para executar.\n");
@@ -86,14 +88,41 @@ int main() {
 
                     token_nome = strtok(NULL, " "); 
                 }
-            } else {
-                task *t = buscar_task(primeiro_arg);
+            } 
+            
+            else if (strcmp(token_nome, "parallel") == 0) {
+                task *tarefas_para_rodar[MAX_TASKS];
+                int qtd = 0;
+                
+                token_nome = strtok(NULL, " ");
+
+                while (token_nome != NULL && qtd < MAX_TASKS) {
+                    task *tarefa_encontrada = buscar_task(token_nome);
+
+                    if (tarefa_encontrada != NULL) {
+                        tarefas_para_rodar[qtd] = tarefa_encontrada;
+                        qtd++;
+                    } else {
+                        printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
+                    }
+
+                    token_nome = strtok(NULL, " ");
+                }
+
+                if (qtd > 0){
+                    executar_paralelo(tarefas_para_rodar, qtd);
+                }
+            } 
+            
+            else {
+                task *t = buscar_task(token_nome);
+                
                 if (t == NULL) {
-                    printf("Erro: Tarefa '%s' não encontrada.\n", primeiro_arg);
+                    printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
                 } else {
                     executar_task(t);
                 }
-                }
+            }
         }
     }
 

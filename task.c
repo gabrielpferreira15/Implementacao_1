@@ -73,3 +73,40 @@ void executar_task(task *t){
         } 
     }
 }
+
+void executar_paralelo(task *tasks[], int total) {
+    pid_t pids[MAX_TASKS];
+    int pids_criados = 0;
+
+    for (int i = 0; i < total; i++) {
+        pid_t pid = fork();
+        if (pid < 0) {
+            perror("Erro ao executar o fork");
+            continue;
+        }
+        if (pid == 0) {
+            execvp(tasks[i]->cmd, tasks[i]->args);
+            perror("Erro ao executar a tarefa em paralelo");
+            exit(EXIT_FAILURE);
+        }
+        pids[pids_criados] = pid;
+        pids_criados++;
+    }
+
+    for (int i = 0; i < pids_criados; i++) {
+        int status;
+        if (waitpid(pids[i], &status, 0) == -1) {
+            perror("Erro ao aguardar um ou mais processos");
+            continue;
+        }
+        
+        if (WIFEXITED(status)) {
+            int codigo_saida = WEXITSTATUS(status);
+            if (codigo_saida != 0) {
+                printf("Aviso: Tarefa paralela encerrou com código de erro %d.\n", codigo_saida);
+            }
+        } else if (WIFSIGNALED(status)) {
+            printf("Aviso: Tarefa paralela interrompida pelo sinal %d.\n", WTERMSIG(status));
+        }
+    }
+}

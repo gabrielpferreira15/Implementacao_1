@@ -14,6 +14,8 @@ void cadastrar_task(char *nome, char *cmd, char *args[]);
 
 void executar_task(task *t);
 
+void executar_paralelo(task *tasks[], int total);
+
 task* buscar_task(char *nome);
 
 #endif
