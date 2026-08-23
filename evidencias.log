@@ -364,4 +364,38 @@ Erro: Tarefa 'abc' não encontrada.
 processflow>  task    exit
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake clean[?2004l
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+Dom 23 Ago 2026 15:45:33 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task
+Erro: Faltando nome da tarefa.
+processflow> task listar
+Erro: Faltando programa da tarefa.
+processflow> run
+Erro: Faltando nome da tarefa para executar.
+processflow> run listar
+Erro: Tarefa 'listar' não encontrada.
+processflow> task listar /bin/ls/  -l
+processflow> run listar
+total 176
+-rw-r--r--@ 1 gabrielpeixoto  staff  21828 23 Ago 15:45 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   1910 23 Ago 12:47 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   2480 23 Ago 15:45 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  34296 23 Ago 15:45 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   1165 23 Ago 15:45 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
+-rw-r--r--  1 gabrielpeixoto  staff   2144 23 Ago 15:45 task.o
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake cla ean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h

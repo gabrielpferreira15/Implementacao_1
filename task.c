@@ -44,7 +44,11 @@ void executar_task(task *t){
     pid_t pid = fork();
 
     if (pid == 0) {
-        exit(0);
+        execvp(t->cmd, t->args);
+
+        perror("Erro ao executar a tarefa");
+
+        exit(EXIT_FAILURE);
     } 
     else {
         int status;
