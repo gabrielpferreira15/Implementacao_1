@@ -78,7 +78,11 @@ int main() {
                 while (token_nome != NULL) {
                     task *t = buscar_task(token_nome);
 
-                    executar_task(t);
+                    if (t == NULL) {
+                        printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
+                    } else {
+                        executar_task(t);
+                    }
 
                     token_nome = strtok(NULL, " "); 
                 }

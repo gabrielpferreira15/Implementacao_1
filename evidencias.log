@@ -459,4 +459,89 @@ teste
 processflow> exit
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
 rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task listar /bin/ls -l
+processflow> run sequentil listar imprimir
+Erro: Tarefa 'sequentil' não encontrada.
+processflow> run sequential lk istal r imprimir
+total 192
+-rw-r--r--@ 1 gabrielpeixoto  staff  30356 23 Ago 18:43 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   2435 23 Ago 18:40 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   2840 23 Ago 18:43 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  34296 23 Ago 18:43 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   1726 23 Ago 17:21 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
+-rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:43 task.o
+Aviso: Tarefa interrompida abruptamente pelo sinal 11.
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../.  mmake clean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwp  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+Dom 23 Ago 2026 18:50:27 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task listar /bin/ls -l
+processflow> ru  n listar
+total 192
+-rw-r--r--@ 1 gabrielpeixoto  staff  32106 23 Ago 18:50 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   2611 23 Ago 18:44 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   2904 23 Ago 18:50 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  34296 23 Ago 18:50 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   1726 23 Ago 17:21 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
+-rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:50 task.o
+processflow> run sequential listar imprimir
+total 192
+-rw-r--r--@ 1 gabrielpeixoto  staff  32106 23 Ago 18:50 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   2611 23 Ago 18:44 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   2904 23 Ago 18:50 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  34296 23 Ago 18:50 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   1726 23 Ago 17:21 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
+-rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:50 task.o
+Erro: Tarefa 'imprimir' não encontrada.
+processflow> sun     run sequential imprimir listar
+Erro: Tarefa 'imprimir' não encontrada.
+total 200
+-rw-r--r--@ 1 gabrielpeixoto  staff  34491 23 Ago 18:50 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   2611 23 Ago 18:44 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   2904 23 Ago 18:50 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  34296 23 Ago 18:50 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   1726 23 Ago 17:21 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
+-rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:50 task.o
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> asda
+processflow> asdasd
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+rm -f main.o task.o processflow
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h
