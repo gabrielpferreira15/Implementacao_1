@@ -59,21 +59,37 @@ int main() {
             args[indice] = NULL;
 
             cadastrar_task(token_nome, token_cmd, args);
-        }else if (strcmp(comando, "run") == 0) {
-            char *token_nome = strtok(NULL, " ");
+        } else if (strcmp(comando, "run") == 0) {
+            char *primeiro_arg = strtok(NULL, " ");
 
-            if (token_nome == NULL) {
-                printf("Erro: Faltando nome da tarefa para executar.\n");
+            if (primeiro_arg == NULL) {
+                printf("Erro: Faltam argumentos para o comando run.\n");
                 continue;
             }
 
-            task *tarefa_encontrada = buscar_task(token_nome);
+            if (strcmp(primeiro_arg, "sequential") == 0) {
+                char *token_nome = strtok(NULL, " ");
 
-            if (tarefa_encontrada == NULL){
-                printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
-            }else{
-                executar_task(tarefa_encontrada);
-            }
+                if (token_nome == NULL) {
+                    printf("Erro: Informe pelo menos uma tarefa para executar.\n");
+                    continue;
+                }
+
+                while (token_nome != NULL) {
+                    task *t = buscar_task(token_nome);
+
+                    executar_task(t);
+
+                    token_nome = strtok(NULL, " "); 
+                }
+            } else {
+                task *t = buscar_task(primeiro_arg);
+                if (t == NULL) {
+                    printf("Erro: Tarefa '%s' não encontrada.\n", primeiro_arg);
+                } else {
+                    executar_task(t);
+                }
+                }
         }
     }
 
