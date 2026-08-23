@@ -1,18 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "task.h"
 
-typedef struct task{
-    char *nome;
-    char *cmd;
-    char *args[50];
-} task;
+int main() {
 
-int main(){
-    task catalogo[100];
-    int tarefas_totais = 0;
-
-    while (1){
+    while (1) {
         char entrada[1024];
 
         printf("processflow> ");
@@ -25,51 +18,47 @@ int main(){
 
         char *comando = strtok(entrada, " ");
 
-        if(comando == NULL){
+        if (comando == NULL) {
             continue;
         }
 
-        if((strcmp(comando, "exit") == 0)){ 
+        if (strcmp(comando, "exit") == 0) {
             break;
         }
 
-        if((strcmp(comando, "task") == 0)){ 
-
-            if (tarefas_totais >= 100) {
-            printf("Erro: Limite de tarefas atingido.\n");
-            continue;
-            }
+        if (strcmp(comando, "task") == 0) {
 
             char *token_nome = strtok(NULL, " ");
+
             if (token_nome == NULL) {
                 printf("Erro: Faltando nome da tarefa.\n");
                 continue;
             }
 
             char *token_cmd = strtok(NULL, " ");
+
             if (token_cmd == NULL) {
                 printf("Erro: Faltando programa da tarefa.\n");
                 continue;
             }
 
-            catalogo[tarefas_totais].nome = strdup(token_nome);
+            char *args[MAX_ARGS];
 
-            catalogo[tarefas_totais].cmd = strdup(token_cmd);
-
-            catalogo[tarefas_totais].args[0] = strdup(token_cmd);
+            args[0] = token_cmd;
 
             int indice = 1;
             char *argumento = strtok(NULL, " ");
 
-            while(argumento != NULL && indice < 49){
-                catalogo[tarefas_totais].args[indice] = strdup(argumento);
+            while (argumento != NULL && indice < MAX_ARGS - 1) {
+                args[indice] = argumento;
                 indice++;
+
                 argumento = strtok(NULL, " ");
             }
 
-            catalogo[tarefas_totais].args[indice] = NULL;
+            args[indice] = NULL;
 
-            tarefas_totais++;
+            cadastrar_task(token_nome, token_cmd, args);
         }
     }
 

@@ -1,0 +1,15 @@
+#ifndef TASK_H
+#define TASK_H
+
+#define MAX_TASKS 100
+#define MAX_ARGS 50
+
+typedef struct task {
+    char *nome;
+    char *cmd;
+    char *args[MAX_ARGS];
+} task;
+
+void cadastrar_task(char *nome, char *cmd, char *args[]);
+
+#endif
