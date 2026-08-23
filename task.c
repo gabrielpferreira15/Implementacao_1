@@ -43,6 +43,11 @@ task* buscar_task(char *nome) {
 void executar_task(task *t){
     pid_t pid = fork();
 
+    if (pid < 0){
+        perror("Erro ao executar o fork");
+        return;
+    }
+
     if (pid == 0) {
         execvp(t->cmd, t->args);
 
@@ -52,6 +57,19 @@ void executar_task(task *t){
     } 
     else {
         int status;
-        waitpid(pid, &status, 0); 
+
+        if (waitpid(pid, &status, 0) == -1) {
+            perror("Erro ao aguardar o processo filho");
+            return;
+        }
+
+        if (WIFEXITED(status)) {
+            int codigo_saida = WEXITSTATUS(status);
+            if (codigo_saida != 0) {
+                printf("Aviso: Tarefa encerrou com código de erro %d.\n", codigo_saida);
+            }
+        } else if (WIFSIGNALED(status)) {
+            printf("Aviso: Tarefa interrompida abruptamente pelo sinal %d.\n", WTERMSIG(status));
+        } 
     }
 }
