@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
 #include "task.h"
 
 task catalogo[MAX_TASKS];
@@ -35,7 +37,17 @@ task* buscar_task(char *nome) {
             return &catalogo[i];
         }
     }
-    
-    printf("Erro: Tarefa '%s' não encontrada.\n", nome);
     return NULL;
+}
+
+void executar_task(task *t){
+    pid_t pid = fork();
+
+    if (pid == 0) {
+        exit(0);
+    } 
+    else {
+        int status;
+        waitpid(pid, &status, 0); 
+    }
 }

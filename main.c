@@ -59,9 +59,7 @@ int main() {
             args[indice] = NULL;
 
             cadastrar_task(token_nome, token_cmd, args);
-        }
-
-        if (strcmp(comando, "run") == 0) {
+        }else if (strcmp(comando, "run") == 0) {
             char *token_nome = strtok(NULL, " ");
 
             if (token_nome == NULL) {
@@ -70,6 +68,12 @@ int main() {
             }
 
             task *tarefa_encontrada = buscar_task(token_nome);
+
+            if (tarefa_encontrada == NULL){
+                printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
+            }else{
+                executar_task(tarefa_encontrada);
+            }
         }
     }
 
