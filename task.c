@@ -27,3 +27,15 @@ void cadastrar_task(char *nome, char *cmd, char *args[]) {
 
     tarefas_totais++;
 }
+
+task* buscar_task(char *nome) {
+    
+    for (int i = 0; i < tarefas_totais; i++) {
+        if (strcmp(catalogo[i].nome, nome) == 0) {
+            return &catalogo[i];
+        }
+    }
+    
+    printf("Erro: Tarefa '%s' não encontrada.\n", nome);
+    return NULL;
+}

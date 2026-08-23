@@ -12,4 +12,6 @@ typedef struct task {
 
 void cadastrar_task(char *nome, char *cmd, char *args[]);
 
+task* buscar_task(char *nome);
+
 #endif

@@ -60,6 +60,17 @@ int main() {
 
             cadastrar_task(token_nome, token_cmd, args);
         }
+
+        if (strcmp(comando, "run") == 0) {
+            char *token_nome = strtok(NULL, " ");
+
+            if (token_nome == NULL) {
+                printf("Erro: Faltando nome da tarefa para executar.\n");
+                continue;
+            }
+
+            task *tarefa_encontrada = buscar_task(token_nome);
+        }
     }
 
     return 0;
