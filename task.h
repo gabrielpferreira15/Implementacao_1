@@ -18,6 +18,8 @@ void executar_paralelo(task *tasks[], int total);
 
 void executar_pipe(task *tasks[], int total);
 
+void executar_redirecionado(task *t, char *arquivo, char *modo);
+
 task* buscar_task(char *nome);
 
 #endif
