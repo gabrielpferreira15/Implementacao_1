@@ -16,6 +16,8 @@ void executar_task(task *t);
 
 void executar_paralelo(task *tasks[], int total);
 
+void executar_pipe(task *tasks[], int total);
+
 task* buscar_task(char *nome);
 
 #endif

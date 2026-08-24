@@ -110,3 +110,44 @@ void executar_paralelo(task *tasks[], int total) {
         }
     }
 }
+
+void executar_pipe(task *tasks[], int total) {
+    int fd_anterior = 0;
+    pid_t pids[MAX_TASKS];
+
+    for (int i = 0; i < total; i++) {
+        int fd_atual[2];
+
+        pids[i] = fork();
+
+        if (pids[i] == 0) {
+            if (fd_anterior != 0) {
+                dup2(fd_anterior, 0);
+                close(fd_anterior);
+            }
+
+            if (i < total - 1) {
+                dup2(fd_atual[1], 1);
+                close(fd_atual[0]);
+                close(fd_atual[1]); 
+            }
+
+            execvp(tasks[i]->cmd, tasks[i]->args);
+
+        } else {
+            if (fd_anterior != 0) {
+                close(fd_anterior);
+            }
+
+            if (i < total - 1) {
+                fd_anterior = fd_atual[0];
+                close(fd_atual[1]); 
+            }
+        }
+    }
+
+    for (int i = 0; i < total; i++) {
+        int status;
+        waitpid(pids[i], &status, 0);
+    }
+}

@@ -113,10 +113,34 @@ int main() {
                     executar_paralelo(tarefas_para_rodar, qtd);
                 }
             } 
+
+            else if (strcmp(token_nome, "pipe") == 0) {
+                task *tarefas_para_rodar[MAX_TASKS];
+                int qtd = 0;
+                
+                token_nome = strtok(NULL, " ");
+
+                while (token_nome != NULL && qtd < MAX_TASKS) {
+                    task *tarefa_encontrada = buscar_task(token_nome);
+
+                    if (tarefa_encontrada != NULL) {
+                        tarefas_para_rodar[qtd] = tarefa_encontrada;
+                        qtd++;
+                    } else {
+                        printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
+                    }
+
+                    token_nome = strtok(NULL, " ");
+                }
+
+                if (qtd > 0){
+                    executar_pipe(tarefas_para_rodar, qtd);
+                }
+            }
             
             else {
                 task *t = buscar_task(token_nome);
-                
+
                 if (t == NULL) {
                     printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
                 } else {
