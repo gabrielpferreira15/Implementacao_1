@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 #include "task.h"
 
 int main() {
@@ -26,7 +27,7 @@ int main() {
             break;
         }
 
-        if (strcmp(comando, "task") == 0) {
+        else if (strcmp(comando, "task") == 0) {
 
             char *token_nome = strtok(NULL, " ");
 
@@ -165,7 +166,7 @@ int main() {
             }
         }
 
-        if (strcmp(comando, "start") == 0) {
+        else if (strcmp(comando, "start") == 0) {
             char *nome_task = strtok(NULL, " \n");
             if (nome_task == NULL) {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: start <tarefa>\n");
@@ -191,6 +192,24 @@ int main() {
                 int job_id = atoi(id_str);
                 aguardar_job(job_id);
             }
+        }
+
+        else if (strcmp(comando, "workdir") == 0) {
+            char *diretorio = strtok(NULL, " \n");
+            
+            if (diretorio == NULL) {
+                fprintf(stderr, "Erro: Sintaxe incorreta. Use: workdir <diretório>\n");
+            } else {
+                if (chdir(diretorio) != 0) {
+                    fprintf(stderr, "Erro: O diretório '%s' não existe ou não pode ser acessado.\n", diretorio);
+                } else {
+                    printf("Diretório de trabalho alterado para: %s\n", diretorio);
+                }
+            }
+        }
+
+        else {
+            fprintf(stderr, "Erro: Comando '%s' não reconhecido.\n", comando);
         }
     }   
 
