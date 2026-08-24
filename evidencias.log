@@ -708,4 +708,57 @@ processflow>
 processflow> run     exti  it
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task /bin/ls
+Erro: Faltando programa da tarefa.
+processflow> task listar /bin/ls
+processflow> task contar /usr/bin/wc
+processflow> run pi  pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
+       9       9      81
+processflow> run pipe listar contar
