@@ -139,7 +139,8 @@ void executar_pipe(task *tasks[], int total) {
             }
 
             execvp(tasks[i]->cmd, tasks[i]->args);
-
+            perror("Erro no exec do pipe");
+            exit(EXIT_FAILURE);
         } else {
             if (fd_anterior != 0) {
                 close(fd_anterior);
@@ -154,6 +155,18 @@ void executar_pipe(task *tasks[], int total) {
 
     for (int i = 0; i < total; i++) {
         int status;
-        waitpid(pids[i], &status, 0);
+        if (waitpid(pids[i], &status, 0) == -1) {
+            perror("Erro ao aguardar processo no pipe");
+            continue;
+        }
+
+        if (WIFEXITED(status)) {
+            int codigo_saida = WEXITSTATUS(status);
+            if (codigo_saida != 0) {
+                printf("Aviso: A tarefa '%s' no pipe encerrou com código %d.\n", tasks[i]->nome, codigo_saida);
+            }
+        } else if (WIFSIGNALED(status)) {
+            printf("Aviso: A tarefa '%s' no pipe foi interrompida pelo sinal %d.\n", tasks[i]->nome, WTERMSIG(status));
+        }
     }
 }
