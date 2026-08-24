@@ -1149,3 +1149,69 @@ processflow> exit
 
 rm -f main.o task.o processflow
 [1m[7m%[27m[1m[0m                                                                               
+
+Script started on Mon Aug 24 18:05:47 2026
+ppwd[?2004l
+
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate  d  ddae te[?2004l
+
+Seg 24 Ago 2026 18:23:20 -03
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004httask listar /bin/ls -l[?2004l
+
+zsh: command not found: task
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
+processflow> task listar /bin/ls -l
+processflow> start listar
+[1] 7034
+processflow> total 296
+-rw-r--r--@ 1 gabrielpeixoto  staff  59042 24 Ago 18:23 evidencias.log
+-rw-r--r--@ 1 gabrielpeixoto  staff   5997 24 Ago 18:07 main.c
+-rw-r--r--  1 gabrielpeixoto  staff   5632 24 Ago 18:23 main.o
+-rw-r--r--@ 1 gabrielpeixoto  staff    318 22 Ago 21:09 Makefile
+-rwxr-xr-x  1 gabrielpeixoto  staff  35016 24 Ago 18:23 processflow
+-rw-r--r--@ 1 gabrielpeixoto  staff     17 21 Ago 15:06 README.md
+-rw-r--r--@ 1 gabrielpeixoto  staff   9501 24 Ago 18:10 task.c
+-rw-r--r--@ 1 gabrielpeixoto  staff    674 24 Ago 18:00 task.h
+-rw-r--r--  1 gabrielpeixoto  staff  10688 24 Ago 18:23 task.o
+
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h
+processflow> task is  ; sle   dormir /bin/sleep 15
+processflow> start di ormit r
+[1] 7684
+processflow> jobs
+[1] 7684 RUNNING dormir
+processflow> wati     ait 1
+Job [1] finalizado.
+processflow> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K

@@ -178,7 +178,21 @@ int main() {
                 }
             }
         }
-    }
+
+        else if (strcmp(comando, "jobs") == 0) {
+            listar_jobs();
+        }
+
+        else if (strcmp(comando, "wait") == 0) {
+            char *id_str = strtok(NULL, " \n");
+            if (id_str == NULL) {
+                fprintf(stderr, "Erro: Sintaxe incorreta. Use: wait <job_ID>\n");
+            } else {
+                int job_id = atoi(id_str);
+                aguardar_job(job_id);
+            }
+        }
+    }   
 
     return 0;
 }

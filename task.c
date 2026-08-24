@@ -297,3 +297,50 @@ void executar_background(task *t) {
     }
 }
 
+void listar_jobs() {
+    int encontrou = 0;
+    for (int i = 0; i < total_jobs; i++) {
+        if (lista_jobs[i].ativo) {
+            int status;
+            pid_t res = waitpid(lista_jobs[i].pid, &status, WNOHANG);
+
+            if (res == 0) {
+                printf("[%d] %d RUNNING %s\n", lista_jobs[i].id, lista_jobs[i].pid, lista_jobs[i].nome_task);
+                encontrou = 1;
+            } else if (res > 0) {
+                printf("[%d] %d DONE    %s\n", lista_jobs[i].id, lista_jobs[i].pid, lista_jobs[i].nome_task);
+                lista_jobs[i].ativo = 0;
+                encontrou = 1;
+            } else {
+                lista_jobs[i].ativo = 0;
+            }
+        }
+    }
+    if (!encontrou) {
+        printf("Nenhum job em background no momento.\n");
+    }
+}
+
+void aguardar_job(int job_id) {
+    int indice = -1;
+    for (int i = 0; i < total_jobs; i++) {
+        if (lista_jobs[i].id == job_id && lista_jobs[i].ativo) {
+            indice = i;
+            break;
+        }
+    }
+
+    if (indice == -1) {
+        fprintf(stderr, "Erro: job informado não existe (%d).\n", job_id);
+        return;
+    }
+
+    int status;
+    if (waitpid(lista_jobs[indice].pid, &status, 0) == -1) {
+        perror("Erro ao aguardar job");
+        return;
+    }
+
+    lista_jobs[indice].ativo = 0;
+    printf("Job [%d] finalizado.\n", job_id);
+}
