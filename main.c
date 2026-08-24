@@ -4,14 +4,33 @@
 #include <unistd.h>
 #include "task.h"
 
-int main() {
+int main(int argc, char *argv[]) {
+    FILE *arquivo = stdin;
+    int modo_interativo = 1;
+
+    if (argc > 2) {
+        fprintf(stderr, "Erro: Número incorreto de argumentos. Use: ./processflow [arquivo]\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (argc == 2) {
+        arquivo = fopen(argv[1], "r");
+        if (arquivo == NULL) {
+            fprintf(stderr, "Erro: Não foi possível abrir o arquivo workflow '%s'.\n", argv[1]);
+            exit(EXIT_FAILURE);
+        }
+        modo_interativo = 0;
+    }
 
     while (1) {
         char entrada[1024];
 
-        printf("processflow> ");
+        if (modo_interativo) {
+            printf("processflow> ");
+            fflush(stdout); 
+        }
 
-        if (fgets(entrada, sizeof(entrada), stdin) == NULL) {
+        if (fgets(entrada, sizeof(entrada), arquivo) == NULL) {
             break;
         }
 
@@ -139,7 +158,7 @@ int main() {
                 }
             }
 
-            else if (strcmp(token_nome, "input") == 0 || strcmp(token_nome, "output") == 0 || strcmp(token_nome, "append") == 0) {
+        else if (strcmp(token_nome, "input") == 0 || strcmp(token_nome, "output") == 0 || strcmp(token_nome, "append") == 0) {
             char *nome_task = strtok(NULL, " \n");
             char *nome_arquivo = strtok(NULL, " \n");
 
@@ -201,7 +220,7 @@ int main() {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: workdir <diretório>\n");
             } else {
                 if (chdir(diretorio) != 0) {
-                    fprintf(stderr, "Erro: O diretório '%s' não existe ou não pode ser acessado.\n", diretorio);
+                    perror("Erro ao mudar o diretório");
                 } else {
                     printf("Diretório de trabalho alterado para: %s\n", diretorio);
                 }
@@ -211,7 +230,11 @@ int main() {
         else {
             fprintf(stderr, "Erro: Comando '%s' não reconhecido.\n", comando);
         }
-    }   
+    }
+
+    if (!modo_interativo && arquivo != NULL) {
+        fclose(arquivo);
+    }
 
     return 0;
 }
