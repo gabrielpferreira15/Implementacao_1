@@ -164,6 +164,20 @@ int main() {
                 }
             }
         }
+
+        if (strcmp(comando, "start") == 0) {
+            char *nome_task = strtok(NULL, " \n");
+            if (nome_task == NULL) {
+                fprintf(stderr, "Erro: Sintaxe incorreta. Use: start <tarefa>\n");
+            } else {
+                task *t = buscar_task(nome_task);
+                if (t != NULL) {
+                    executar_background(t);
+                } else {
+                    fprintf(stderr, "Erro: Tarefa '%s' não encontrada.\n", nome_task);
+                }
+            }
+        }
     }
 
     return 0;

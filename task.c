@@ -9,6 +9,9 @@
 task catalogo[MAX_TASKS];
 int tarefas_totais = 0;
 
+job lista_jobs[MAX_JOBS];
+int total_jobs = 0;
+
 void cadastrar_task(char *nome, char *cmd, char *args[]) {
 
     if (tarefas_totais >= MAX_TASKS) {
@@ -259,3 +262,38 @@ void executar_redirecionado(task *t, char *arquivo, char *modo){
         }
     }
 }
+
+void executar_background(task *t) {
+    if (total_jobs >= MAX_JOBS) {
+        fprintf(stderr, "Erro: Limite de jobs em background atingido.\n");
+        return;
+    }
+
+    pid_t pid = fork();
+
+    if (pid < 0) {
+        perror("Erro no fork para background");
+        return;
+    }
+
+    if (pid == 0) {
+        int dev_null = open("/dev/null", O_RDONLY);
+        if (dev_null != -1) {
+            dup2(dev_null, 0);
+            close(dev_null);
+        }
+
+        execvp(t->cmd, t->args);
+        perror("Erro ao executar tarefa em background");
+        exit(EXIT_FAILURE);
+    } else {
+        total_jobs++;
+        lista_jobs[total_jobs - 1].id = total_jobs;
+        lista_jobs[total_jobs - 1].pid = pid;
+        lista_jobs[total_jobs - 1].nome_task = strdup(t->nome);
+        lista_jobs[total_jobs - 1].ativo = 1;
+
+        printf("[%d] %d\n", total_jobs, pid);
+    }
+}
+
