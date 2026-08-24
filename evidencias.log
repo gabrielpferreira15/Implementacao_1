@@ -1284,3 +1284,6 @@ linha-um
 linha-dois
 linha-um
 linha-dois
+^L  ^D[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake l xlean     xlean     clean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h
