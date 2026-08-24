@@ -625,4 +625,87 @@ main.c		Makefile	README.md	task.h
 sort: Bad file descriptor
 processflow> [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
 rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwd p  L [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+Dom 23 Ago 2026 23:06:45 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task listar /bin/ls
+processflow> task contar /usr/bin/wc
+processflow> run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow> v
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> alkdjakjsd
+processflow> kadlkaj
+processflow> task sdlkaldk
+Erro: Faltando programa da tarefa.
+processflow> run kkkk
+Erro: Tarefa 'kkkk' não encontrada.
+processflow> run
+Erro: Faltam argumentos para o comando run.
+processflow> lllllasdalkdl             run l sr equential listar contar
+evidencias.log	main.o		processflow	task.c		task.o
+main.c		Makefile	README.md	task.h
+
+
+
+
+
+^C
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake ce lean       m  uulimit - -n 20[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+processflow> task listar /bin/ls
+processflow> task contar /usr/bin/wc
+processflow> run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+       9       9      81
+processflow>  run pipe listar contar
+Erro ao criar pipe: Too many open files
+processflow>  run pipe listar contar
+Erro ao criar pipe: Too many open files
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> 
+processflow> run     exti  it
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+rm -f main.o task.o processflow
 [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h

@@ -118,6 +118,11 @@ void executar_pipe(task *tasks[], int total) {
     for (int i = 0; i < total; i++) {
         int fd_atual[2];
 
+        if (pipe(fd_atual) < 0) {
+            perror("Erro ao criar pipe");
+            return;
+        }
+
         pids[i] = fork();
 
         if (pids[i] == 0) {
