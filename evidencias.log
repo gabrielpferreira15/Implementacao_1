@@ -338,13 +338,26 @@ rm -f main.o task.o processflow
 ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
 [0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [KScript started on Sun Aug 23 12:55:10 2026
 [1m[7m%[27m[1m[0m                                                                               
-mmake[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % make[K  m  ppwd[?2004l
+mmake[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % make[K  m  ppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 13:07:21 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 [1mtask.c:43:26: [0m[0;1;35mwarning: [0m[1munused parameter 't' [-Wunused-parameter][0m
@@ -352,7 +365,11 @@ gcc -Wall -Wextra -std=c17 -c task.c
       | [0;1;32m                         ^
 [0m1 warning generated.
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /binn /ls
 processflow> run listar
 processflow> run
@@ -362,19 +379,43 @@ Erro: Faltando programa da tarefa.
 processflow> run abc
 Erro: Tarefa 'abc' não encontrada.
 processflow>  task    exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 15:45:33 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task
 Erro: Faltando nome da tarefa.
 processflow> task listar
@@ -396,52 +437,116 @@ total 176
 -rw-r--r--@ 1 gabrielpeixoto  staff    290 23 Ago 12:36 task.h
 -rw-r--r--  1 gabrielpeixoto  staff   2144 23 Ago 15:45 task.o
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake cla ean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake cla ean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmam  mmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmam  mmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> run l     task listas r /bin/ls -l
 processflow> task im  imprimir /bin/echo ola
 processflow> run impri	mir
 ola
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../l]=   o processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../l]=   o processflow[1m [0m[0m [?2004l
+
 processflow> run imprimir
 Erro: Tarefa 'imprimir' não encontrada.
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmak m  mmake clean       m  ppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmak m  mmake clean       m  ppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 16:31:45 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task teste ajsdlkjaskldjaslkd
 processflow> run teste
 Erro ao executar a tarefa: No such file or directory
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd  p  wwho ai  ami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd  p  wwho ai  ami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 18:41:14 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /nin   bin/ls -l
 processflow> task lsi  istar /bin/^[[D^[[D^[[D^[[D                            imprimir /bin/echo teste
 processflow> run sequential listar imprimir
@@ -457,13 +562,25 @@ total 184
 -rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:41 task.o
 teste
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /bin/ls -l
 processflow> run sequentil listar imprimir
 Erro: Tarefa 'sequentil' não encontrada.
@@ -480,19 +597,43 @@ total 192
 -rw-r--r--  1 gabrielpeixoto  staff   2704 23 Ago 18:43 task.o
 Aviso: Tarefa interrompida abruptamente pelo sinal 11.
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../.  mmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../.  mmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwp  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwp  [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 18:50:27 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /bin/ls -l
 processflow> ru  n listar
 total 192
@@ -542,19 +683,43 @@ processflow>
 processflow> 
 processflow> 
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 19:51:48 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /bin/ls -l
 processflow> tan sk imprimir 1    1 /bin/echo ABC
 processflow> task imprimir2 /bin/echo DFG   E DEF
@@ -604,38 +769,86 @@ total 208
 -rw-r--r--@ 1 gabrielpeixoto  staff    341 23 Ago 19:20 task.h
 -rw-r--r--  1 gabrielpeixoto  staff   3848 23 Ago 19:52 task.o
 processflow> exig t
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 22:38:38 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> tarsk   sk listar /bin/ls
 processflow> task ordenar /usr/bin/sort
 processflow> run pir e pe listar ordenar
 evidencias.log	main.o		processflow	task.c		task.o
 main.c		Makefile	README.md	task.h
 sort: Bad file descriptor
-processflow> [1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+processflow> [1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwd p  L [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake  m  ppwd p  L [H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+
 Dom 23 Ago 2026 23:06:45 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /bin/ls
 processflow> task contar /usr/bin/wc
 processflow> run pipe listar contar
@@ -676,8 +889,16 @@ main.c		Makefile	README.md	task.h
 
 
 ^C
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake ce lean       m  uulimit - -n 20[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake ce lean       m  uulimit - -n 20[?2004l
+
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /bin/ls
 processflow> task contar /usr/bin/wc
 processflow> run pipe listar contar
@@ -706,13 +927,25 @@ processflow>
 processflow> 
 processflow> 
 processflow> run     exti  it
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task /bin/ls
 Erro: Faltando programa da tarefa.
 processflow> task listar /bin/ls
@@ -776,20 +1009,47 @@ processflow>
 processflow> adljaklsdja
 processflow> adjalsdj
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [KScript started on Mon Aug 24 07:46:29 2026
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [Kppwd[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [KScript started on Mon Aug 24 07:46:29 2026
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [Kppwd[?2004l
+
 /Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hwwhoami[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hwwhoami[?2004l
+
 gabrielpeixoto
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hddate[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hddate[?2004l
+
 Seg 24 Ago 2026 10:23:04 -03
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hmmake[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004hmmake[?2004l
+
 gcc -Wall -Wextra -std=c17 -c main.c
 gcc -Wall -Wextra -std=c17 -c task.c
 gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h../processflow[1m [0m[0m [?2004l
+
 processflow> task listar /listar      bin/ls
 processflow> task contar /usr/bin/wc -l
 processflow> 
@@ -801,6 +1061,16 @@ processflow> run input contar resi ultado.txt
 processflow> ^[[C^[[D        
 processflow> 
 processflow> exit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [Kmmake clean[?2004l
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [Kmmake clean[?2004l
+
 rm -f main.o task.o processflow
-[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBook-Air-de-Gabriel-6 gpsf % [K
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MacBook-Air-de-Gabriel-6.local/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsfScript started on Mon Aug 24 15:02:36 2026
+Restored session: Seg 24 Ago 2026 15:00:38 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmaek  ke clean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K

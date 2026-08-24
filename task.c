@@ -129,12 +129,21 @@ void executar_pipe(task *tasks[], int total) {
 
         if (pids[i] == 0) {
             if (fd_anterior != 0) {
-                dup2(fd_anterior, 0);
+                if (dup2(fd_anterior, 0) < 0) {
+                    perror("Erro no dup2 para entrada do pipe");
+                    close(fd_anterior);
+                    exit(EXIT_FAILURE);
+                }
                 close(fd_anterior);
             }
 
             if (i < total - 1) {
-                dup2(fd_atual[1], 1);
+                if (dup2(fd_atual[1], 1) < 0) {
+                    perror("Erro no dup2 para saída do pipe");
+                    close(fd_atual[0]);
+                    close(fd_atual[1]);
+                    exit(EXIT_FAILURE);
+                }
                 close(fd_atual[0]);
                 close(fd_atual[1]); 
             }
