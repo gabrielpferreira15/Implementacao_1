@@ -158,23 +158,7 @@ int main(int argc, char *argv[]) {
                 }
             }
 
-        else if (strcmp(token_nome, "input") == 0 || strcmp(token_nome, "output") == 0 || strcmp(token_nome, "append") == 0) {
-            char *nome_task = strtok(NULL, " \n");
-            char *nome_arquivo = strtok(NULL, " \n");
-
-            if (nome_task == NULL || nome_arquivo == NULL) {
-                fprintf(stderr, "Erro: Sintaxe incorreta. Use: run %s <nome_da_task> <arquivo>\n", token_nome);
-            } else {
-                task *t = buscar_task(nome_task);
-                if (t != NULL) {
-                    executar_redirecionado(t, nome_arquivo, token_nome);
-                } else {
-                    fprintf(stderr, "Erro: Tarefa '%s' não encontrada no catálogo.\n", nome_task);
-                }
-            }
-        }
-
-            else {
+                        else {
                 task *t = buscar_task(token_nome);
 
                 if (t == NULL) {
@@ -184,6 +168,22 @@ int main(int argc, char *argv[]) {
                 }
             }
         }
+
+        else if (strcmp(comando, "input") == 0 || strcmp(comando, "output") == 0 || strcmp(comando, "append") == 0) {
+            char *nome_task = strtok(NULL, " \t\r\n");
+            char *nome_arquivo = strtok(NULL, " \t\r\n");
+
+            if (nome_task == NULL || nome_arquivo == NULL) {
+                fprintf(stderr, "Erro: Sintaxe incorreta. Use: %s <nome_da_task> <arquivo>\n", comando);
+            } else {
+                task *t = buscar_task(nome_task);
+                if (t != NULL) {
+                    executar_redirecionado(t, nome_arquivo, comando);
+                } else {
+                    fprintf(stderr, "Erro: Tarefa '%s' não encontrada no catálogo.\n", nome_task);
+                }
+    }
+}
 
         else if (strcmp(comando, "start") == 0) {
             char *nome_task = strtok(NULL, " \n");
