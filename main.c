@@ -36,6 +36,10 @@ int main(int argc, char *argv[]) {
 
         entrada[strcspn(entrada, "\n")] = '\0';
 
+        if (!modo_interativo) {
+            printf("%s\n", entrada);
+        }
+
         char *comando = strtok(entrada, " \t\r\n");
 
         if (comando == NULL) {
