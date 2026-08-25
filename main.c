@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     int modo_interativo = 1;
 
     if (argc > 2) {
-        fprintf(stderr, "Erro: Número incorreto de argumentos. Use: ./processflow [arquivo]\n");
+        fprintf(stderr, "Erro: Número incorreto de argumentos. Use: ./processflow [arquivo].pf\n");
         exit(EXIT_FAILURE);
     }
 
