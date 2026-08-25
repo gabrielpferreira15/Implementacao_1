@@ -1,0 +1,11 @@
+workdir /tmp
+task ecoar /bin/echo Process Flow rodando no limite
+task contar /usr/bin/wc -w
+task dormir /bin/sleep 3
+start dormir
+jobs
+run pipe ecoar contar
+run parallel ecoar contar
+wait 1
+jobs
+exit

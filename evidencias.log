@@ -1375,3 +1375,67 @@ Saving session...
 ...completed.
 
 Script done on Mon Aug 24 22:09:43 2026
+Script started on Mon Aug 24 22:18:11 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd [?2004l
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+Seg 24 Ago 2026 22:18:20 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -std=c17 -c main.c
+gcc -Wall -Wextra -std=c17 -c task.c
+gcc -Wall -Wextra -std=c17 main.o task.o -o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m teste-limite.pf[1m [0m[0m [?2004l
+workdir /tmp
+Diretório de trabalho alterado para: /tmp
+task ecoar /bin/echo Process Flow rodando no limite
+task contar /usr/bin/wc -w
+task dormir /bin/sleep 3
+start dormir
+[1] 14477
+jobs
+[1] 14477 RUNNING dormir
+run pipe ecoar contar
+       5
+run parallel ecoar contar
+Process Flow rodando no limite
+^D       0
+wait 1
+Job [1] finalizado.
+jobs
+Nenhum job em background no momento.
+exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Kppwd[?2004l
+/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hwwhoami[?2004l
+gabrielpeixoto
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hddate[?2004l
+Seg 24 Ago 2026 22:22:57 -03
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h../processflow[1m [0m[0m teste-invalido.pf[1m [0m[0m [?2004l
+workdir /pasta_imaginaria_do_processflow
+Erro ao mudar o diretório: No such file or directory
+run tarefa_fantasma
+Erro: Tarefa 'tarefa_fantasma' não encontrada.
+task quebra_exec /bin/comando_que_nao_existe
+run quebra_exec
+Erro ao executar a tarefa: No such file or directory
+Aviso: Tarefa encerrou com código de erro 1.
+task ler_arquivo /bin/cat
+input ler_arquivo /tmp/arquivo_q_nao_existe.txt
+run ler_arquivo
+Erro entrada: No such file or directory
+Aviso: Tarefa encerrou com código de erro 1.
+wait 999
+Erro: job informado não existe (999).
+exit quebra_exec
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004hmmake clean[?2004l
+rm -f main.o task.o processflow
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBookAir/Users/gabrielpeixoto/Documents/FACULDADE/CC/P3/IFSO/gpsf[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [K[?2004h[H[2J[0m[27m[24m[Jgabrielpeixoto@MacBookAir gpsf % [Keexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Mon Aug 24 22:26:09 2026

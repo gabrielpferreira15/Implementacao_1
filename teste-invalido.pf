@@ -1,0 +1,9 @@
+workdir /pasta_imaginaria_do_processflow
+run tarefa_fantasma
+task quebra_exec /bin/comando_que_nao_existe
+run quebra_exec
+task ler_arquivo /bin/cat
+input ler_arquivo /tmp/arquivo_q_nao_existe.txt
+run ler_arquivo
+wait 999
+exit
