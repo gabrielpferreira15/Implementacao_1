@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
         entrada[strcspn(entrada, "\n")] = '\0';
 
-        char *comando = strtok(entrada, " ");
+        char *comando = strtok(entrada, " \t\r\n");
 
         if (comando == NULL) {
             continue;
@@ -48,14 +48,14 @@ int main(int argc, char *argv[]) {
 
         else if (strcmp(comando, "task") == 0) {
 
-            char *token_nome = strtok(NULL, " ");
+            char *token_nome = strtok(NULL, " \t\r\n");
 
             if (token_nome == NULL) {
                 printf("Erro: Faltando nome da tarefa.\n");
                 continue;
             }
 
-            char *token_cmd = strtok(NULL, " ");
+            char *token_cmd = strtok(NULL, " \t\r\n");
 
             if (token_cmd == NULL) {
                 printf("Erro: Faltando programa da tarefa.\n");
@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
             args[0] = token_cmd;
 
             int indice = 1;
-            char *argumento = strtok(NULL, " ");
+            char *argumento = strtok(NULL, " \t\r\n");
 
             while (argumento != NULL && indice < MAX_ARGS - 1) {
                 args[indice] = argumento;
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
         } 
         
         else if (strcmp(comando, "run") == 0) {
-            char *token_nome = strtok(NULL, " ");
+            char *token_nome = strtok(NULL, " \t\r\n");
 
             if (token_nome == NULL) {
                 printf("Erro: Faltam argumentos para o comando run.\n");
@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
             }
 
             if (strcmp(token_nome, "sequential") == 0) {
-                token_nome = strtok(NULL, " ");
+                token_nome = strtok(NULL, " \t\r\n");
 
                 if (token_nome == NULL) {
                     printf("Erro: Informe pelo menos uma tarefa para executar.\n");
@@ -106,7 +106,7 @@ int main(int argc, char *argv[]) {
                         executar_task(t);
                     }
 
-                    token_nome = strtok(NULL, " "); 
+                    token_nome = strtok(NULL, " \t\r\n"); 
                 }
             } 
             
@@ -114,7 +114,7 @@ int main(int argc, char *argv[]) {
                 task *tarefas_para_rodar[MAX_TASKS];
                 int qtd = 0;
                 
-                token_nome = strtok(NULL, " ");
+                token_nome = strtok(NULL, " \t\r\n");
 
                 while (token_nome != NULL && qtd < MAX_TASKS) {
                     task *tarefa_encontrada = buscar_task(token_nome);
@@ -126,7 +126,7 @@ int main(int argc, char *argv[]) {
                         printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
                     }
 
-                    token_nome = strtok(NULL, " ");
+                    token_nome = strtok(NULL, " \t\r\n");
                 }
 
                 if (qtd > 0){
@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
                 task *tarefas_para_rodar[MAX_TASKS];
                 int qtd = 0;
                 
-                token_nome = strtok(NULL, " ");
+                token_nome = strtok(NULL, " \t\r\n");
 
                 while (token_nome != NULL && qtd < MAX_TASKS) {
                     task *tarefa_encontrada = buscar_task(token_nome);
@@ -150,7 +150,7 @@ int main(int argc, char *argv[]) {
                         printf("Erro: Tarefa '%s' não encontrada.\n", token_nome);
                     }
 
-                    token_nome = strtok(NULL, " ");
+                    token_nome = strtok(NULL, " \t\r\n");
                 }
 
                 if (qtd > 0){
@@ -177,16 +177,23 @@ int main(int argc, char *argv[]) {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: %s <nome_da_task> <arquivo>\n", comando);
             } else {
                 task *t = buscar_task(nome_task);
+                
                 if (t != NULL) {
-                    executar_redirecionado(t, nome_arquivo, comando);
+                    if (strcmp(comando, "input") == 0) {
+                        t->arq_in = strdup(nome_arquivo);
+                    } else if (strcmp(comando, "output") == 0) {
+                        t->arq_out = strdup(nome_arquivo);
+                    } else if (strcmp(comando, "append") == 0) {
+                        t->arq_append = strdup(nome_arquivo);
+                    }
                 } else {
-                    fprintf(stderr, "Erro: Tarefa '%s' não encontrada no catálogo.\n", nome_task);
+                    fprintf(stderr, "Erro: Tarefa '%s' não encontrada.\n", nome_task);
                 }
-    }
-}
+            }
+        }
 
         else if (strcmp(comando, "start") == 0) {
-            char *nome_task = strtok(NULL, " \n");
+            char *nome_task = strtok(NULL, " \t\r\n");
             if (nome_task == NULL) {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: start <tarefa>\n");
             } else {
@@ -204,7 +211,7 @@ int main(int argc, char *argv[]) {
         }
 
         else if (strcmp(comando, "wait") == 0) {
-            char *id_str = strtok(NULL, " \n");
+            char *id_str = strtok(NULL, " \t\r\n");
             if (id_str == NULL) {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: wait <job_ID>\n");
             } else {
@@ -214,7 +221,7 @@ int main(int argc, char *argv[]) {
         }
 
         else if (strcmp(comando, "workdir") == 0) {
-            char *diretorio = strtok(NULL, " \n");
+            char *diretorio = strtok(NULL, " \t\r\n");
             
             if (diretorio == NULL) {
                 fprintf(stderr, "Erro: Sintaxe incorreta. Use: workdir <diretório>\n");

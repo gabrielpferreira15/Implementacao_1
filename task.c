@@ -30,6 +30,9 @@ void cadastrar_task(char *nome, char *cmd, char *args[]) {
     }
 
     catalogo[tarefas_totais].args[indice] = NULL;
+    catalogo[tarefas_totais].arq_in = NULL;
+    catalogo[tarefas_totais].arq_out = NULL;
+    catalogo[tarefas_totais].arq_append = NULL;
 
     tarefas_totais++;
 }
@@ -53,6 +56,8 @@ void executar_task(task *t){
     }
 
     if (pid == 0) {
+        configurar_redirecionamento(t);
+
         execvp(t->cmd, t->args);
 
         perror("Erro ao executar a tarefa");
@@ -184,82 +189,26 @@ void executar_pipe(task *tasks[], int total) {
     }
 }
 
-void executar_redirecionado(task *t, char *arquivo, char *modo){
-    pid_t pid = fork();
-
-    if (pid < 0){
-        perror("Erro no fork");
-        return;
-    }
-
-    if (pid == 0){
-        int fd = -1;
-
-        if (strcmp(modo, "input") == 0) {
-            fd = open(arquivo, O_RDONLY);
-            if (fd < 0) {
-                perror("Erro ao abrir arquivo de entrada");
-                exit(EXIT_FAILURE);
-            }
-            if (dup2(fd, 0) < 0) {
-                perror("Erro no dup2 para entrada");
-                close(fd);
-                exit(EXIT_FAILURE);
-            }
-        }
-
-        else if (strcmp(modo, "output") == 0) {
-            fd = open(arquivo, O_WRONLY | O_CREAT | O_TRUNC, 0644);
-            if (fd < 0) {
-                perror("Erro ao criar/abrir arquivo de saída");
-                exit(EXIT_FAILURE);
-            }
-            if (dup2(fd, 1) < 0) {
-                perror("Erro no dup2 para saída");
-                close(fd);
-                exit(EXIT_FAILURE);
-            }
-        }
-
-        else if (strcmp(modo, "append") == 0) {
-            fd = open(arquivo, O_WRONLY | O_CREAT | O_APPEND, 0644);
-            if (fd < 0) {
-                perror("Erro ao abrir arquivo para append");
-                exit(EXIT_FAILURE); 
-            }
-            if (dup2(fd, 1) < 0) {
-                perror("Erro no dup2 para o append");
-                close(fd);
-                exit(EXIT_FAILURE);
-            }
-        }
-
-        else {
-            fprintf(stderr, "Modo de redirecionamento inválido: %s\n", modo);
-            exit(EXIT_FAILURE);
-        }
-
+void configurar_redirecionamento(task *t) {
+    if (t->arq_in != NULL) {
+        int fd = open(t->arq_in, O_RDONLY);
+        if (fd < 0) { perror("Erro entrada"); exit(EXIT_FAILURE); }
+        dup2(fd, 0);
         close(fd);
-        execvp(t->cmd, t->args);
-        perror("Erro ao executar o redirecionamento");
-        exit(EXIT_FAILURE);
+    }
+    
+    if (t->arq_out != NULL) {
+        int fd = open(t->arq_out, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+        if (fd < 0) { perror("Erro saída"); exit(EXIT_FAILURE); }
+        dup2(fd, 1);
+        close(fd);
     }
 
-    else {
-        int status;
-        if (waitpid(pid, &status, 0) == -1) {
-            perror("Erro ao aguardar processo redirecionado");
-            return;
-        }
-
-        if (WIFEXITED(status)) {
-            int codigo_saida = WEXITSTATUS(status);
-            if (codigo_saida != 0) {
-                printf("Aviso: Tarefa '%s' encerrou com código %d.\n", t->nome, codigo_saida);
-            }
-        } else if (WIFSIGNALED(status)) {
-            printf("Aviso: Tarefa '%s' foi interrompida pelo sinal %d.\n", t->nome, WTERMSIG(status));
-        }
+    if (t->arq_append != NULL) {
+        int fd = open(t->arq_append, O_WRONLY | O_CREAT | O_APPEND, 0644);
+        if (fd < 0) { perror("Erro append"); exit(EXIT_FAILURE); }
+        dup2(fd, 1);
+        close(fd);
     }
 }
 

@@ -10,6 +10,9 @@ typedef struct task {
     char *nome;
     char *cmd;
     char *args[MAX_ARGS];
+    char *arq_in;      
+    char *arq_out;     
+    char *arq_append;  
 } task;
 
 typedef struct {
@@ -27,7 +30,7 @@ void executar_paralelo(task *tasks[], int total);
 
 void executar_pipe(task *tasks[], int total);
 
-void executar_redirecionado(task *t, char *arquivo, char *modo);
+void configurar_redirecionamento(task *t);
 
 void executar_background(task *t);
 
